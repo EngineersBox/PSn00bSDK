@@ -1,6 +1,12 @@
 # PSn00bSDK optimized memset
 # (C) 2022 spicyjpeg - MPL licensed
 
+; .set noreorder
+;
+; .section .text.memset, "ax", @progbits
+; .global memset
+; .type memset, @function
+
 # Parameters:
 # $a0: destination pointer
 # $a1: byte chararcter to write
@@ -32,7 +38,7 @@ SOFTWARE.
 
 */
 
-    .section .ramtext, "ax", @progbits
+    .section .text.memset, "ax", @progbits
     .align 2
     .global memset
     .type memset, @function
