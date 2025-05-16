@@ -1,3 +1,7 @@
+# NOTE: Revert this to original implementation once
+#       https://github.com/grumpycoders/pcsx-redux/issues/1928
+#       has been fixed.
+
 # PSn00bSDK optimized memset
 # (C) 2022 spicyjpeg - MPL licensed
 
