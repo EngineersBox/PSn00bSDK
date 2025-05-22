@@ -1,11 +1,11 @@
 // Based on ilia muraviev's CRUSH compressor program which falls under public domain
 
 #include <string.h>
+#include "lzconfig.h"
 #ifdef LZP_USE_MALLOC
 #include <stdlib.h>
 #endif
 
-#include "lzconfig.h"
 #include "bit.h"
 #include "lzp.h"
 
